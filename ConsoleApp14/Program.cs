@@ -94,9 +94,9 @@ class program
         //    }
         #endregion
         #region part4
-        //    //    //1
-        //    var w = wordd.Any(x => x.Contains("ei"));
-        //    Console.WriteLine(w);
+        //1
+        var w = wordd.Any(x => x.Contains("ei"));
+        Console.WriteLine(w);
         //2
         var catstock = ProductList.Where(x => x.UnitsInStock == 0).Select(x => new { x.Category, x.ProductName });
         foreach (var x in catstock)
